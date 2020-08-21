@@ -36,7 +36,7 @@ def create_app():
     @app.route('/greeting')
     def greeting():
         name = request.args.get('name')
-        return 'Kia Ora {}'.format(name)
+        return 'Kia Ora {}!'.format(name)
 
 
     return app
